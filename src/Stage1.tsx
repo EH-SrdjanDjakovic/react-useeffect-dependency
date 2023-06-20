@@ -23,7 +23,7 @@ const Stage1 = () => {
       if (currentColor === "#fff") setCurrentColor(previousColor.current);
       setOutputMessage(``);
     }
-  }, [circleSize, currentColor]);
+  }, [circleSize]);
 
   return (
     <div className="stage1-container">
