@@ -1,0 +1,36 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0;
+}
+
+
+.main {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'left right';
+  gap: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 90%;
+  height: calc(100vh - 75px);
+  width: 100vw;
+}
+
+.header {
+  grid-area: header;
+}
+
+.left-panel {
+  grid-area: left;
+  border: solid 2px burlywood;
+  padding: 20px;
+}
+
+.right-panel {
+  grid-area: right;
+  border: solid 2px burlywood;
+  padding: 20px;
+}
